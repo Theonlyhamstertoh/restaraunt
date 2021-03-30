@@ -29,12 +29,10 @@ const renderContactPage = () => {
             
             </div>
         </div>
-        <div class='map'>
-            <img src='/dist/images/6dd89f108818317.5fc64abd3407a.png' alt='map'>
-        </div>
-        <div class='pinpoint'>
-            <a target='_blank' href='https://www.google.com/maps/place/Antarctic+Ice+shield/@-75.7785991,17.6940684,4.56z/data=!4m16!1m10!4m9!1m3!2m2!1d21.5414925!2d-75.961016!1m3!2m2!1d37.3478298!2d55.8563575!3e0!3m4!1s0xa562e2182e0470f5:0x758e6c6d9775b34d!8m2!3d-81.844359!4d72.5528117?hl=en'><img id='pinpoint' src='/dist/images/pinpoint.png'></a>
-        </div>
+        <div class='map'></div>
+        <a target='_blank' href='https://www.google.com/maps/place/Antarctic+Ice+shield/@-75.7785991,17.6940684,4.56z/data=!4m16!1m10!4m9!1m3!2m2!1d21.5414925!2d-75.961016!1m3!2m2!1d37.3478298!2d55.8563575!3e0!3m4!1s0xa562e2182e0470f5:0x758e6c6d9775b34d!8m2!3d-81.844359!4d72.5528117?hl=en'><img id='pinpoint' src='/dist/images/pinpoint.png'></a>
+       
+        
     </div> `
     const createPage = document.createRange().createContextualFragment(contactHTML);
     
