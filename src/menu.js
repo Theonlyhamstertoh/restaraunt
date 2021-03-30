@@ -1,4 +1,4 @@
-import burger1 from "/dist/images/burger1.png"
+import burger1 from "/dist/images/menu.svg"
 import burger2 from "/dist/images/burger2.png"
 import burger3 from "/dist/images/burger3.png"
 import burger4 from "/dist/images/hamburger4.png"
@@ -13,7 +13,7 @@ const renderMenuPage = () => {
     <div class='menuPage'>
          <img id='burgermenu' src='/dist/images/Screenshot 2021-03-29 180023.png'>
         <div class='singleburger'>
-            <img class='burgerImage' src='${mainHarmburgerIcon}'>
+            <img class='burgerImage' src='${burger1}'>
             <img class='burgerImage' src='${burger2}'>
             <img class='burgerImage' src='${burger3}'>
             <img class='burgerImage' src='${burger4}'>
