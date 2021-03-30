@@ -1,3 +1,4 @@
+import mainHarmburgerIcon from "/dist/images/hamburger.jpg";
 const renderHomePage = () => {
     const homeHTML = `
     <div class='homePage'>
