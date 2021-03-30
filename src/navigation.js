@@ -6,12 +6,12 @@ const renderNavigation = () => {
     const navHTML = `
     <span id='title'><span id='coolB'>HAAAM</span>BURGER </span>
     <div class='navicons'>
-        <input type='image'  class='button' id='cart' alt='shopping cart icon' src='${shoppingCartIcon}'>
-        <input type='image' id='menu' class='button' src='${menuIcon}'>
+        <img  class='button' id='cart' alt='shopping cart icon' src='${shoppingCartIcon}'>
+        <img id='menu' class='button' src='${menuIcon}'>
     </div>
     
     <div class='sidebar'>
-        <input type='image' class='button' id='arrow' src='${arrowIcon}'>
+        <img class='button' id='arrow' src='${arrowIcon}'>
         <div class='buttonContainer'>
             <input type='button' class='button' id='home' value='HOME'>
             <input type='button' class='button' id='foodMenu' value='MENU'>
