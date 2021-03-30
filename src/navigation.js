@@ -1,5 +1,7 @@
 import shoppingCartIcon from "/dist/images/cart.svg"
 import menuIcon from "/dist/images/menu.svg"
+import arrowIcon from "/dist/images/arrow.svg"
+
 const renderNavigation = () => {
     const navHTML = `
     <span id='title'><span id='coolB'>HAAAM</span>BURGER </span>
@@ -9,7 +11,7 @@ const renderNavigation = () => {
     </div>
     
     <div class='sidebar'>
-        <input type='image' class='button' id='arrow' src='images/arrow.svg'>
+        <input type='image' class='button' id='arrow' src='${arrowIcon}'>
         <div class='buttonContainer'>
             <input type='button' class='button' id='home' value='HOME'>
             <input type='button' class='button' id='foodMenu' value='MENU'>
