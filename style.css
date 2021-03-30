@@ -437,7 +437,8 @@ p {
 
     /*  about page */
     .aboutpage {
-        animation: 1s forwards grow;
+        /* animation: 1s forwards grow; */
+        margin: 0px;
     }
 
     @keyframes grow {
