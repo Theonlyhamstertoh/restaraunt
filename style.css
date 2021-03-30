@@ -228,7 +228,6 @@ body {
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('/dist/images/map.png');
 }
 
 
@@ -346,7 +345,6 @@ p {
     top: 0;
     left: 0;
     margin-left: 500px;
-    background-image: url('/dist/images/hamburger.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
