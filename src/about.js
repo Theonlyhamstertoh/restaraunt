@@ -1,4 +1,4 @@
-const renderAboutPage = (() => {
+const renderAboutPage = () => {
     const aboutHTML = `<div class='aboutpage'>
     <h1 class='aboutUs'>. ABOUT US</h1>
     <div class='aboutInfo'>
@@ -34,6 +34,6 @@ const renderAboutPage = (() => {
     
     const main = document.querySelector('.main');
     main.appendChild(createPage);
-})();
+};
 
 export {renderAboutPage};

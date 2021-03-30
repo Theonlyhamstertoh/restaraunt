@@ -1,4 +1,4 @@
-const renderHomePage = (() => {
+const renderHomePage = () => {
     const homeHTML = `
     <div class='homePage'>
         <span class='homeTitle' ><span style='color:red; font-weight: 800;';>HAAAM</span>BURGER</span>
@@ -12,6 +12,6 @@ const renderHomePage = (() => {
     
     const main = document.querySelector('.main');
     main.appendChild(createPage);
-})();
+};
 
 export {renderHomePage};

@@ -1,6 +1,5 @@
-const renderNavigation = (() => {
+const renderNavigation = () => {
     const navHTML = `
-    
     <span id='title'><span id='coolB'>HAAAM</span>BURGER </span>
     <div class='navicons'>
         <input type='image'  class='button' id='cart' alt='shopping cart' src='/dist/images/cart.svg'>
@@ -20,7 +19,50 @@ const renderNavigation = (() => {
     
     const header = document.querySelector('.header');
     header.appendChild(createPage);
-})();
+};
 
 
-export default renderNavigation;
+const navEffect = () => {
+    const menu = document.getElementById('menu');
+    const sidebar = document.querySelector('.sidebar');
+    const arrow = document.getElementById('arrow');
+    const main = document.querySelector('.main');
+    const header = document.querySelector('.header');
+    const body = document.getElementById('content')
+    menu.addEventListener('click', openSidebar);
+    arrow.addEventListener('click', closeSidebar);
+    function openSidebar() {
+        sidebar.style.display = 'block';
+        sidebar.classList.add('transitionSidebar');
+    }
+    
+
+    
+    let sidebarOpen = false;
+    function checkClickPosition(event) {
+        sidebarOpen = true;
+        console.log(event)
+        if(sidebarOpen === true) {
+            if(event === main || event === header || event === body ) {
+                closeSidebar();
+    
+            }
+        }
+    }
+    function closeSidebar() {
+        sidebarOpen = false;
+        sidebar.classList.add('closeSidebar');
+        window.setTimeout(() => {
+            sidebar.style.display = 'none';
+            sidebar.classList.remove('closeSidebar');
+            sidebar.classList.remove('transitionSidebar');
+        }, 500)
+    }
+    
+   return {checkClickPosition}
+
+}
+
+
+
+export {renderNavigation, navEffect };
