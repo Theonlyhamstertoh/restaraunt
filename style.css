@@ -221,7 +221,7 @@ body {
 
 .map {
     position: absolute;
-    width: 85vw;
+    width: 100vw;
     height: 100vh;
     top: 0;
     right: -100px;
@@ -348,6 +348,7 @@ p {
     background-size: cover;
     background-position: top;
     background-clip: border-box;
+    background-image: url('/dist/images/hamburger.jpg');
 }
 
 /*  transition page effect */
