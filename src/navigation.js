@@ -1,9 +1,11 @@
+import shoppingCartIcon from "/dist/images/cart.svg"
+
 const renderNavigation = () => {
     const navHTML = `
     <span id='title'><span id='coolB'>HAAAM</span>BURGER </span>
     <div class='navicons'>
         <input type='image'  class='button' id='cart' alt='shopping cart' src='/dist/images/cart.svg'>
-        <input type='image' id='menu' class='button' src='images/menu.svg'>
+        <input type='image' id='menu' class='button' src='${shoppingCartIcon}'>
     </div>
     
     <div class='sidebar'>

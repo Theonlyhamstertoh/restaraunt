@@ -1,4 +1,6 @@
+
 const renderMenuPage = () => {
+
     const menuHTML = `
     <div class='menuPage'>
          <img id='burgermenu' src='/dist/images/Screenshot 2021-03-29 180023.png'>
