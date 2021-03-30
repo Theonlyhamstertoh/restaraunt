@@ -1,4 +1,4 @@
-import burger1 from "/dist/images/menu.svg"
+import burger1 from "/dist/images/burger1.png"
 import burger2 from "/dist/images/burger2.png"
 import burger3 from "/dist/images/burger3.png"
 import burger4 from "/dist/images/hamburger4.png"
