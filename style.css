@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+
+body {
+    position: relative;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 'header' 'main' 'footer';
+    background-color: #131313;
+    overflow-x: hidden;
+
+}
+
+
+/*          Navigation Bar       */
+.header {  
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 0 20px;
+    color: rgb(253, 249, 249);
+    letter-spacing: 1px;
+    grid-area: header;
+    animation: 2s 2 forwards glow;
+    user-select: none;
+}
+
+#title {
+    cursor: pointer;
+    transition: all 200ms;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+#title:hover {
+    font-size: 1.1em;
+}
+
+
+#coolB {
+    color: #FE0F20;
+}
+
+#cart {
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+}
+
+
+.toprow {
+    text-align: end;
+    padding: 5px 10px;
+}
+
+#arrow {
+    width: 20px;
+    height: 20px;      
+}
+
+#menu {
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+
+}
+.navicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    right: -200;
+    min-height: 100vh;
+    top: 0;
+    background-color: #292929;
+    width: 200px;
+}
+.transitionSidebar {
+    animation: 500ms forwards transitionSidebar;
+}
+@keyframes transitionSidebar {
+    from{right: -200px}
+    to{right: 0px};
+}
+
+.closeSidebar {
+    animation: 500ms forwards closeSidebar;
+}
+@keyframes closeSidebar {
+    from{right: 0px}
+    to{right: -200px};
+}
+
+.buttonContainer {  
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    color: rgba(253, 249, 249, 0.952);
+    font-size: 16px;
+    background-color: transparent;
+    margin: 0 7px;
+    border: none;
+    transition: all 200ms;
+    font-weight: 500;
+
+}
+.button:hover {
+    transform: scale(1.2);
+}
+
+
+
+.main {
+    grid-area: main;
+}
+
+
+/*          Contact Form */
+
+.contactInfo {
+    position: absolute;
+    height: 100vh;
+    background-color: #FE0F20;
+    width: 450px;
+    top: 0px;
+    color: white;
+}
+.contactPage > *{
+    pointer-events: none;
+}
+
+.contactbuttons {
+    background-color: transparent;
+    width: 400px;
+    border: 1px solid white;
+    padding: 6px 15px;
+    color: white;
+    letter-spacing: 1px;
+    outline: none;
+    pointer-events: auto;
+}
+
+.guest {
+    margin-top: 150px;
+}
+.existingUser {
+    margin-top: 50px;
+}
+.description {
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+#findStore {
+    width: 190px;
+    background-color: white;
+    color: #FE0F20;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms all;
+
+}
+
+#findStore:hover {
+    border: none;
+    background-color:#292929;
+    color: white;
+}
+
+
+#zip {
+    width: 190px;
+}
+
+#signin {
+    background-color: rgb(255, 255, 255);
+    color: #FE0F20;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms all;
+
+}
+#signin:hover {
+    border: none;
+    background-color:#292929;
+    color: white;
+}
+::placeholder {
+    color: white;
+}
+
+.storeZipWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.map {
+    transform: scale(1.);
+    position: fixed;
+    top: 0;
+    right: -100px;
+    z-index: -1;
+}
+
+#pinpoint {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 268px;
+    right: 60px;
+    transition: 300ms all;
+    cursor: pointer;
+}
+#pinpoint:hover {
+    transform: scale(1.2);
+
+}
+
+
+.footer {
+    grid-area: footer;
+}
+
+
+/*      About me Page        */
+.aboutpage {
+    margin: 0 200px;
+}
+.aboutpage > * {
+    pointer-events: none;
+}
+
+.aboutUs {
+    padding: 20px;
+}
+.aboutInfo {
+    padding: 0px 80px 40px 80px ;
+}
+article {
+    margin-top: 20px;
+}
+
+h1 {
+    color: #FE0F20;
+
+}
+p {
+    font-size: .9em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.904)
+}
+
+
+
+
+
+/*          Menu             */
+.menuPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuPage > * {
+    pointer-events: none;
+}
+.menuObject {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #292929;
+}
+
+.singleburger {
+    display: none;
+}
+
+.burgerImage {
+    width: 80vw;
+}
+
+/*          Home Page        */
+.homePage {
+    position: absolute;
+    height: 100vh;
+    background-color: #FE0F20;
+    width: 450px;
+    top: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    text-overflow: clip;
+
+}
+
+.homePage > * {
+    pointer-events: none;
+}
+.homeTitle {
+    font-size: 4em;
+    background-color: #131313;
+    width: 100%;
+    text-align: center;
+}
+.homeText {
+    padding: 40px 40px 0px 40px;
+}
+.hamburgerImage {
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 500px;
+    background-image: url('/dist/images/hamburger.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-clip: border-box;
+}
+
+/*  transition page effect */
+.fadeIn {
+    animation: 300ms forwards fadeIn;
+}
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.fadeOut {
+    animation: 300ms forwards fadeOut;
+}
+
+@keyframes fadeOut {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+
+/*  media query */
+@media (max-width: 600px) {
+    .map {
+        display: none;
+    }
+    .pinpoint {
+        display: none;
+    }
+
+    .contactPage {
+        display: flex;
+        justify-content: center;
+    }
+    .contactInfo {
+        position: initial;
+        width: 100vw;
+    }
+    .guest {
+        margin-top: 20px;
+    }
+
+    .description {
+        padding: 0 20px;
+    }
+    .contactbuttons {
+        width: 90vw;
+    }
+    #findStore {
+        width: 45vw;
+    }
+    #zip {
+        width: 40vw;
+    }
+
+
+}
+
+
+@media (max-width: 998px) {
+
+    .hamburgerImage {
+        display: none;
+    }
+
+    .homePage {
+        position: initial;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .homeTitle {
+        width: 100vw;
+        position: initial;
+        font-size: 3.7em;
+        display: none;
+    }
+ 
+    .homeText {
+        font-size: 1.3em;
+    }
+
+    /*  about page */
+    .aboutpage {
+        animation: 1s forwards grow;
+    }
+
+    @keyframes grow {
+        from{margin: 200px;}
+        to {margin: 0px}
+    }
+
+
+    /*  menu */
+    .singleburger {
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+
+    #burgermenu {
+        display: none;
+    }
+
+}
+@media (min-width: 999px) {
+    body {
+        overflow: hidden;
+    }
+
+    .hamburgerImage {
+        background-size: cover;
+        background-position: left;
+        left: -500px;
+    }
+
+
+
+}
+
+
