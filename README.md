@@ -1,5 +1,4 @@
 # restaraunt
 
-[Link to restaurant] (https://theonlyhamstertoh.github.io/restaraunt/)
-
+Link to demo: https://theonlyhamstertoh.github.io/restaurant/
 ## Images
