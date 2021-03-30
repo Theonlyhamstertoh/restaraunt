@@ -1,19 +1,18 @@
-import burger111 from "/dist/images/menu.svg"
+import burger1 from "/dist/images/menu.svg"
 import burger2 from "/dist/images/burger2.png"
 import burger3 from "/dist/images/burger3.png"
 import burger4 from "/dist/images/hamburger4.png"
 import burger5 from "/dist/images/burger5.png"
 import burger6 from "/dist/images/burger6.png"
-import mainHarmburgerIcon from "/dist/images/hamburger.jpg"
-
+import allBurgers from "/dist/images/Screenshot 2021-03-29 180023.png"
 
 const renderMenuPage = () => {
 
     const menuHTML = `
     <div class='menuPage'>
-         <img id='burgermenu' src='/dist/images/Screenshot 2021-03-29 180023.png'>
+         <img id='burgermenu' src='${allBurgers}'>
         <div class='singleburger'>
-            <img class='burgerImage' src='${burger111}'>
+            <img class='burgerImage' src='${burger1}'>
             <img class='burgerImage' src='${burger2}'>
             <img class='burgerImage' src='${burger3}'>
             <img class='burgerImage' src='${burger4}'>
