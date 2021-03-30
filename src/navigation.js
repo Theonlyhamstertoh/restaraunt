@@ -3,11 +3,11 @@ const renderNavigation = () => {
     <span id='title'><span id='coolB'>HAAAM</span>BURGER </span>
     <div class='navicons'>
         <input type='image'  class='button' id='cart' alt='shopping cart' src='/dist/images/cart.svg'>
-        <input type='image' id='menu' class='button' src='/dist/images/menu.svg'>
+        <input type='image' id='menu' class='button' src='images/menu.svg'>
     </div>
     
     <div class='sidebar'>
-        <input type='image' class='button' id='arrow' src='/dist/images/arrow.svg'>
+        <input type='image' class='button' id='arrow' src='images/arrow.svg'>
         <div class='buttonContainer'>
             <input type='button' class='button' id='home' value='HOME'>
             <input type='button' class='button' id='foodMenu' value='MENU'>
