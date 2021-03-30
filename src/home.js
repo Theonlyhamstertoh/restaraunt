@@ -1,4 +1,4 @@
-import mainHarmburgerIcon from "/dist/images/hamburger.jpg"
+import mainHarmburgerIcon from "/dist/images/hamburger.jpg";
 
 const renderHomePage = () => {
     const homeHTML = `
@@ -9,11 +9,11 @@ const renderHomePage = () => {
         <p class='homeText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eveniet illum, quaerat eius quos ut neque tempore soluta. Quo, reprehenderit? ipsum dolor sit amet consectetur, adipisicing elit. Fuga, quasi ipsum dolor, sit amet consectetur adipisicing elit. Quod, quas!
         </p>
     </div>
-    <img src='${mainHarmburgerIcon}' class='hamburgerImage'>
+    <img src='${mainHarmburgerIcon}' class='hamburgerImage'>`
     const createPage = document.createRange().createContextualFragment(homeHTML);
     
     const main = document.querySelector('.main');
     main.appendChild(createPage);
 };
 
-export {renderHomePage};
+export {renderHomePage}

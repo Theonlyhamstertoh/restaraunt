@@ -1,6 +1,5 @@
 import pinpointIcon from '/dist/images/pinpoint.png'; 
 import mapIcon from '/dist/images/map.png'; 
-import mapIcon from 
 const renderContactPage = () => {
     const contactHTML = `
     <div class='contactPage'>
