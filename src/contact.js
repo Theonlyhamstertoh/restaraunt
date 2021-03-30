@@ -1,4 +1,4 @@
-import pinpointIcon from '/dist/images/pinpoint.svg'; 
+import pinpointIcon from '/dist/images/pinpoint.png'; 
 const renderContactPage = () => {
     const contactHTML = `
     <div class='contactPage'>
