@@ -226,7 +226,7 @@ body {
     top: 0;
     right: -100px;
     z-index: -1;
-    background-image: url('/dist/images/map.png');
+    background-image: url('./images/map.png');
 }
 
 
