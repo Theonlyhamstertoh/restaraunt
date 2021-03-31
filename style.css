@@ -140,7 +140,6 @@ body {
 
 
 /*          Contact Form */
-
 .contactInfo {
     position: absolute;
     height: 100vh;
@@ -224,7 +223,9 @@ body {
     width: 100vw;
     height: 100vh;
     top: 0;
-    right: -100px;
+    right: -134px;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -1;
     background-image: url('./images/map.png');
 }
@@ -235,7 +236,7 @@ body {
     width: 50px;
     height: 50px;
     position: absolute;
-    right: 50px;
+    right: 100px;
     bottom: 100px;
     transition: 300ms all;
     pointer-events: auto;
@@ -264,7 +265,7 @@ body {
     padding: 20px;
 }
 .aboutInfo {
-    padding: 0px 80px 40px 80px ;
+    padding: 0px 40px 40px 60px ;
 }
 article {
     margin-top: 20px;
@@ -346,8 +347,10 @@ p {
     margin-left: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+
     background-clip: border-box;
+    background-position: left;
+    left: -500px;
     background-image: url('./images/hamburger.jpg');
 }
 
@@ -375,7 +378,7 @@ p {
     .map {
         display: none;
     }
-    .pinpoint {
+    #pinpoint {
         display: none;
     }
 
@@ -457,20 +460,6 @@ p {
     #burgermenu {
         display: none;
     }
-
-}
-@media (min-width: 999px) {
-    body {
-        overflow: hidden;
-    }
-
-    .hamburgerImage {
-        background-size: cover;
-        background-position: left;
-        left: -500px;
-    }
-
-
 
 }
 
